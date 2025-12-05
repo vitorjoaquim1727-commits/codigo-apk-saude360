@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.IngestaoAgua"
+             Title="Ingestão Diária de Água">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+            
+
+
+            <Image Source="alimentacao.png"/>
+
+            <Label Text="Peso" FontAttributes="Bold"/>
+            <Entry
+                x:Name="txtPeso"
+                Keyboard="Numeric"
+                Placeholder="Peso (Kg)"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                
+                <Button
+                    Text="Verificar"
+                    x:Name="btnVerificar"
+                    Clicked="btnVerificar_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+                
+                <Button
+                    Text="Apagar"
+                    x:Name="btnLimpar"
+                    Clicked="btnLimpar_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+                
+            </HorizontalStackLayout>
+
+            <Border WidthRequest="360" HeightRequest="150">
+                <ScrollView>
+                    <Label
+                        Text=""
+                        x:Name="Resultado"/>
+                </ScrollView>
+            </Border>
+
+            <Button
+                Text="Status"
+                x:Name="btnStatus"
+                Clicked="btnStatus_Clicked"
+                BackgroundColor="BurlyWood"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

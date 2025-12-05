@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.imc"
+             Title="Índice de Massa Corporal">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <ImageButton Source="livro1.png" 
+                HeightRequest="15" 
+                WidthRequest="15" 
+                HorizontalOptions="End"
+                x:Name="btnInformacao"
+                Clicked="btnInformacao_Clicked"
+                         />
+
+
+            
+            <Image Source="aerobica.png"/>
+            
+            <Label
+                Text="Peso (kg)"
+                />
+            <Entry
+                x:Name="entPeso"
+                Width="150"
+                Height="50"
+                Placeholder="Peso (kg)" Keyboard="Numeric"
+                />
+            <Label
+                Text="Altura"/>
+            <Entry
+                x:Name="entAltura"
+                Width="150"
+                Height="50"
+                Placeholder="Altura (m)" Keyboard="Numeric"
+                />
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button
+                    x:Name="btnCalcular"
+                    Text="Verificar"
+                    Clicked="btnCalcular_Clicked"
+                    BackgroundColor="BurlyWood"
+                 />
+                <Button
+                    x:Name="btnApagar"
+                    Text="Apagar"
+                    Clicked="btnApagar_Clicked"
+                    BackgroundColor="BurlyWood"
+                 />
+            </HorizontalStackLayout>
+            <Border WidthRequest="360" HeightRequest="150">
+                <ScrollView>
+                    <Label
+                        x:Name="resultado"
+                        FontSize="20"
+                        Text=""
+                    />
+                </ScrollView>
+            </Border>
+
+            <Button Text="Status"
+                x:Name ="btnStatys"
+                Clicked="btnStatys_Clicked"
+                BackgroundColor="BurlyWood"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

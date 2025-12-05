@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.pastaTreino.TrinoPuxar.BarraPage"
+             Title="Bara">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center" VerticalOptions="Center">
+          
+
+            <Image Source="barradeflexoes.png"/>
+
+            <ScrollView>
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="30">
+                    <RadioButton
+                        Content="Neutra"
+                        x:Name="rbNeutra"
+                        CheckedChanged="TipoPegada"/>
+
+
+                    <RadioButton
+                        Content="Supinada"
+                        x:Name="rbSupinada"
+                        CheckedChanged="TipoPegada"/>
+
+                    <RadioButton
+                        Content="Pronada"
+                        x:Name="rbPronada"
+                        CheckedChanged="TipoPegada"/>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Peso"/>
+                <Entry WidthRequest="100" x:Name="peso" Keyboard="Numeric"/>
+
+                <Label Text="Série"/>
+                <Entry WidthRequest="100" x:Name="serie" Keyboard="Numeric"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Repetição" HorizontalTextAlignment="Center"/>
+            <Entry HorizontalOptions="Center" WidthRequest="100" x:Name="repeticao" Keyboard="Numeric"/>
+
+            <Button 
+                Text="Salvar"
+                x:Name="btnSalvar"
+                BackgroundColor="BurlyWood"
+                Clicked="btnSalvar_Clicked"/>
+
+            <Button
+                Text="Apagar"
+                x:Name="btnApagar"
+                BackgroundColor="BurlyWood"
+                Clicked="btnApagar_Clicked"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

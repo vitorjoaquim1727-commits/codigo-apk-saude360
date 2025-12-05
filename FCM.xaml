@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.FCM"
+             Title="frequência Cardiaca Máxima">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="32, 0"  
+            HorizontalOptions="Center"
+            >
+
+
+            <Image Source="cardiaco.png"/>
+
+            <Label 
+                Text="Idade"
+                FontAttributes="Bold"
+                />
+            <Entry
+                Keyboard="Numeric"
+                x:Name="txtIdeade"
+                />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button
+                    x:Name="btnCalcular"
+                    Text="Verificar"
+                    Clicked="btnCalcular_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+
+                <Button
+                    x:Name="btnLimpar"
+                    Text="Apagar"
+                    Clicked="btnLimpar_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+            </HorizontalStackLayout>
+
+            <Border HeightRequest="150" WidthRequest="360">
+                <ScrollView>
+                    <Label Text=""
+                           x:Name="Resultado"/>
+                </ScrollView>
+            </Border>
+
+            <Button Text="Status"
+                    x:Name="btnStatus"
+                    Clicked="btnStatus_Clicked"
+                    BackgroundColor="BurlyWood"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

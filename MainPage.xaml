@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            >
+
+            <Label
+                Text="Bem-vindo à"
+                FontSize="30"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                />
+            <Label
+                Text="Saúde 360"
+                FontSize="40"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Image Source="correr.png" 
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       />
+                <Image Source="treino.png"
+                       WidthRequest="150"
+                       HeightRequest="150"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button
+                    Text="Acessar"
+                    BackgroundColor="BurlyWood"
+                    x:Name ="btnAcessar"
+                    Clicked="btnAcessar_Clicked"
+                    />
+                <Button
+                    Text="Nos apoie"
+                    BackgroundColor="BurlyWood"
+                    x:Name="btnApoie"
+                    Clicked="btnApoie_Clicked"
+                    />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Fazer Login"
+                x:Name="btnLogin"
+                Clicked="btnLogin_Clicked"
+                BackgroundColor="BurlyWood"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

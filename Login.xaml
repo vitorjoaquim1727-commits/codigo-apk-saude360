@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.Login"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center"
+            BackgroundColor="BurlyWood"
+            >
+
+            <Label 
+                Text="Apra facilitar, personaliza e Quardar os seus dados faça o login"
+                FontAttributes="Bold"
+                FontSize="16"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Nome"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+            <Entry
+                x:Name="txtNome"
+                Placeholder="Maria"/>
+
+            <Label
+                Text="Sexo Biológico"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
+                <RadioButton
+                    x:Name="sexoM"
+                    Content="Masculino"
+                    TextColor="Black"
+                    Value="Masculino"
+                    FontAttributes="Bold"
+                    CheckedChanged="VerificaSexo"
+                    />
+
+                <RadioButton
+                    x:Name="sexoF"
+                    Content="Feminino"
+                    TextColor="Black"
+                    Value="Feminino"
+                    FontAttributes="Bold"
+                    CheckedChanged="VerificaSexo"/>
+            </HorizontalStackLayout>
+
+            <Grid ColumnDefinitions="*,Auto"
+                RowDefinitions="Auto,Auto "
+                Padding="10"
+                RowSpacing="9"
+                ColumnSpacing="20">
+
+                <!-- Linha 1 -->
+                <Label Text="Qual o seu Peso" FontAttributes="Bold" TextColor="Black"/>
+                <Entry Placeholder="Peso (Kg)" Grid.Column="1" x:Name="txtPeso" Keyboard="Numeric"/>
+               
+
+                <!-- Linha 2 -->
+                <Label Text="Qual a sua Meta" FontAttributes="Bold" Grid.Row="1" TextColor="Black"/>
+                <Entry Placeholder="Peso (Kg)" Grid.Row="1" Grid.Column="1" x:Name="txtMeta" Keyboard="Numeric"/>
+                
+
+            </Grid>
+
+            <Label
+               Text="Biotipos Corporais" 
+                TextColor="Black"
+                FontAttributes="Bold"/>
+
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
+                    <RadioButton
+                        x:Name="Ectomorfo"
+                        Content="Ectomorfo"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        CheckedChanged="VerificaBiotipo"/>
+
+                    <RadioButton
+                        x:Name="Mesomorfo"
+                        Content="Mesomorfo"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        CheckedChanged="VerificaBiotipo"/>
+
+                    <RadioButton
+                        x:Name="Endomorfo"
+                        Content="Endomorfo"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        CheckedChanged="VerificaBiotipo"/>
+
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Label
+                Text="Semha"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+            <Entry
+                x:Name="txtSenhas"
+                Placeholder="Crie umas senha fácil de no 5 digitos"
+                Keyboard="Password"
+                TextChanged="txtSenhas_TextChanged"
+                />
+            <Label            
+                x:Name="lblRecado"
+                Text="Senhas com muito digitos"
+                TextColor="red"
+                IsVisible="False"
+                FontAttributes="Bold"/>
+
+            <Button
+                Text="Finalizar e Entrar"
+                FontAttributes="Bold"
+                FontSize="16"
+                x:Name="btnFinalizar"
+                Clicked="btnFinalizar_Clicked"
+                Background="Orange"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

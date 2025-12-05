@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.tmb"
+             Title="Taxa Metabólica Basal">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        >
+
+
+            <Image Source="prancha.png"/>
+
+            <Label Text="Peso" />
+
+            <Entry x:Name="txtPeso" Placeholder="Peso (kg)" Keyboard="Numeric"/>
+
+            <Label Text="Altura"/>
+
+            <Entry x:Name="txtAltura" Placeholder="Altura (m)" Keyboard="Numeric"/>
+
+            <Label Text="Idade"/>
+
+            <Entry x:Name="txtIdade" Placeholder="Idade " Keyboard="Numeric"/>
+
+            <Label Text ="Sexo" FontAttributes="Bold"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <RadioButton
+                    Content="Homem"
+                    x:Name="rbtnHomem"
+                    CheckedChanged="VerificaSexo"/>
+
+                <RadioButton
+                    Content="Mulher"
+                    x:Name="rbtnMulher"
+                    CheckedChanged="VerificaSexo"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button
+                x:Name="btnCalcular"
+                Text="Verificar"
+                Clicked="btnCalcular_Clicked"
+                    BackgroundColor="BurlyWood"
+            />
+                <Button
+                x:Name="btnApagar"
+                Text="Apagar"
+                Clicked="btnApagar_Clicked"
+                    BackgroundColor="BurlyWood"
+            />
+            </HorizontalStackLayout>
+
+            <Border WidthRequest="360" HeightRequest="150">
+                <ScrollView>
+                    <Label
+                    x:Name="Resultado"
+                    FontSize="20"
+                    Text=""
+                />
+                </ScrollView>
+            </Border>
+
+           
+            <Button
+                Text="Status"
+                BackgroundColor="BurlyWood"
+                x:Name="btnStatus"
+                Clicked="btnStatus_Clicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.TDEE"
+             Title="Gasto Calórico Diário Total">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            
+
+            <Image Source="correr.png"/>
+
+            <Label Text="Nível de Atividade" 
+           FontAttributes="Bold" 
+           FontSize="18"
+           HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="*,Auto"
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto "
+                Padding="10"
+                RowSpacing="9"
+                ColumnSpacing="20">
+
+                <!-- Cabeçalhos -->
+                <Label Text="Nível de atividade" FontAttributes="Bold" />
+                <Label Text="Fator" FontAttributes="Bold" Grid.Column="1" />
+
+                <!-- Linha 1 -->
+                <Label Text="Sedentário" Grid.Row="1" />
+                <Label Text="1,2" Grid.Row="1" Grid.Column="1" />
+
+                <!-- Linha 2 -->
+                <Label Text="Levemente ativo" Grid.Row="2" />
+                <Label Text="1,375" Grid.Row="2" Grid.Column="1" />
+
+                <!-- Linha 3 -->
+                <Label Text="Moderadamente ativo" Grid.Row="3" />
+                <Label Text="1,55" Grid.Row="3" Grid.Column="1" />
+
+                <!-- Linha 4 -->
+                <Label Text="Muito ativo" Grid.Row="4" />
+                <Label Text="1,725" Grid.Row="4" Grid.Column="1" />
+
+                <!-- Linha 5 -->
+                <Label Text="Extremamente ativo" Grid.Row="5" />
+                <Label Text="1,9" Grid.Row="5" Grid.Column="1" />
+
+            </Grid>
+
+            <Label Text="TMB"/>
+            
+            <Entry
+                x:Name="txtTMB"
+                Placeholder="0000"
+                Keyboard="Numeric"/>
+            
+            <Label Text="Fator de Atividade"/>
+
+            <Entry
+                x:Name="txtFator"
+                Keyboard="Numeric"
+                />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button
+                    Text="Verificar"
+                    BackgroundColor="BurlyWood"
+                    x:Name="btnVerificar"
+                    Clicked="btnVerificar_Clicked"/>
+
+                <Button
+                    Text="Apagar"
+                    BackgroundColor="BurlyWood"
+                    x:Name="btnApagar"
+                    Clicked="btnApagar_Clicked"/>
+            </HorizontalStackLayout>
+
+            <Border WidthRequest="360" HeightRequest="150" >
+                <ScrollView>
+                    <Label
+                        x:Name="Resultado"
+                        FontSize="20"
+                        Text=""
+                    />
+                </ScrollView>
+            </Border>
+
+            <Button
+                Text="Status"
+                BackgroundColor="BurlyWood"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.escolhatreino"
+             Title=""
+            >
+
+    <ContentPage Title="Empurrar" BackgroundColor="BurlyWood">
+
+        <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center" VerticalOptions="Center">
+ 
+
+            <Label Text="Supino Inclinado"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="supnoenclinado.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnSupnoEnclinado"
+                            Clicked="btnSupnoEnclinado_Clicked"
+                            />
+                </HorizontalStackLayout>
+
+            </Border>
+
+            <Label Text="Supino"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="supnoreto.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnSupio"
+                            Clicked="btnSupio_Clicked"
+                            />
+                </HorizontalStackLayout>
+
+            </Border>
+
+            <Label Text="Rosca"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="rosca.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnRosca"
+                            Clicked="btnRosca_Clicked"
+                        
+                            />
+                </HorizontalStackLayout>
+
+            </Border>
+
+            <Label Text="Supino Inclinado Guiado"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="maquinadesupinoinclinado.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnSupinoInclinadoGuiado"
+                            Clicked="btnSupinoInclinadoGuiado_Clicked"
+                        
+                            />
+                </HorizontalStackLayout>
+
+            </Border>
+
+                <Label Text="Supino Com Halteres"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="halteresajustaveis.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnSupinoHalteres"
+                                Clicked="btnSupinoHalteres_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Paralela"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="torredeforca.png" 
+                            WidthRequest="150"
+                            HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                           HeightRequest="10" WidthRequest="150" 
+                           BackgroundColor="BurlyWood"
+                                x:Name="btnParalela"
+                                Clicked="btnParalela_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Flexão"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="prancha.png" 
+                            WidthRequest="150"
+                            HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                           HeightRequest="10" WidthRequest="150" 
+                           BackgroundColor="BurlyWood"
+                                x:Name="btnFlexao"
+                                Clicked="btnFlexao_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Paralela Assistente"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="paralelasassistida.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnParalelaAssintente"
+                                Clicked="btnParalelaAssintente_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Puxar" BackgroundColor="BurlyWood">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center" VerticalOptions="Center">
+
+
+                <Label Text="Remada Alta"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="remadaalta.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnRemadaAlta"
+                                Clicked="btnRemadaAlta_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Remada Baixa"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="maquinaderemada.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnRemadaBaixa"
+                                Clicked="btnRemadaBaixa_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Barra"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="barradeflexoes.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnBarra"
+                                Clicked="btnBarra_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Barramento"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="barraemt.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="Barramento"
+                                Clicked="Barramento_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Barra Assistente"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="paralelasassistida.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnBarraAssistente"
+                                Clicked="btnBarraAssistente_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Trapezio"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="trapezio.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnTrapezio"
+                                Clicked="btnTrapezio_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Remada Serrote"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="halteres.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                                x:Name="btnRemadaSerrote"
+                                Clicked="btnRemadaSerrote_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </ContentPage>
+
+    <ContentPage Title="Pernas" BackgroundColor="BurlyWood">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center" VerticalOptions="Center">
+                
+
+                <Label Text="Extensora"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="estensora.png" 
+                            WidthRequest="150"
+                            HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                            HeightRequest="10" WidthRequest="150" 
+                            BackgroundColor="BurlyWood"
+                              x:Name="btnEstensora"
+                                Clicked="btnEstensora_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+
+
+                <Label Text="Leg Press sentado"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="legsentado.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnLegSentado"
+                            Clicked="btnLegSentado_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Agachamento"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="agachamento.png" 
+                            WidthRequest="150"
+                            HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                            HeightRequest="10" WidthRequest="150" 
+                            BackgroundColor="BurlyWood"
+                            x:Name="btnAgachamento"
+                            Clicked="btnAgachamento_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Bicicleta ergométrica"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="bicicletaergometrivca.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnBicicleta"
+                            Clicked="btnBicicleta_Clicked"
+                        
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+
+
+                <Label Text="Escada"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="stepmill.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnEscada"
+                            Clicked="btnEscada_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+
+                <Label Text="extensão de lombar"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="extencaolombar.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                        <Button Text="Acessar"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnExtensaoLombar"
+                            Clicked="btnExtensaoLombar_Clicked"
+                            />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="flexão de pernas deitado"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  FontSize="20"
+                  TextColor="Black"
+                  FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                   Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="flexaodepernasdeitada.png" 
+                       WidthRequest="150"
+                       HeightRequest="150"
+                   />
+                        <Button Text="Acessar"
+                         HeightRequest="10" WidthRequest="150" 
+                         BackgroundColor="BurlyWood"
+                             x:Name="btnFlexaoPernaDeitado"
+                             Clicked="btnFlexaoPernaDeitado_Clicked"
+                           />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+
+                <Label Text="leg press inclinado"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  FontSize="20"
+                  TextColor="Black"
+                  FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                   Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="legpressinclinado.png" 
+                       WidthRequest="150"
+                       HeightRequest="150"
+                   />
+                    <Button Text="Acessar"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="btnLegInclinado"
+                        Clicked="btnLegInclinado_Clicked"       
+                           />
+                    </HorizontalStackLayout>
+
+                </Border>
+
+                <Label Text="Eliptico"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  FontSize="20"
+                  TextColor="Black"
+                  FontAttributes="Bold"/>
+
+                <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                   Stroke="Black" StrokeThickness="2">
+
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Image Source="eliptico.png" 
+                       WidthRequest="150"
+                       HeightRequest="150"
+                   />
+                    <Button Text="Acessar"
+                       HeightRequest="10" WidthRequest="150" 
+                       BackgroundColor="BurlyWood"
+                       x:Name="btnEliptico"
+                       Clicked="btnEliptico_Clicked"
+                       
+                           />
+                    </HorizontalStackLayout>
+
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+
+</TabbedPage>

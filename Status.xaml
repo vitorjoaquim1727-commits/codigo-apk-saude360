@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.Status"
+             BackgroundColor="BurlyWood"
+             Title="Status">
+
+    <VerticalStackLayout 
+        Padding="55,0"
+        Spacing="25">
+        
+        
+        <Label 
+            Text="IMC"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="20"/>
+
+        <HorizontalStackLayout Spacing="110">
+            <Label Text="not"
+                   HorizontalOptions="Fill"/>
+
+            <Label Text="ok"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="not"
+                   HorizontalOptions="End"/>
+        </HorizontalStackLayout>
+
+        <ProgressBar
+            x:Name="barraProgressoIMC"
+            Progress="0"
+            ProgressColor="Green"
+            WidthRequest="300"
+            Margin="0,10,0,0" />
+
+
+        <Label 
+            Text="TMB"
+            HorizontalOptions="Center"
+            FontSize="20"
+            FontAttributes="Bold"/>
+        <HorizontalStackLayout>
+            
+        </HorizontalStackLayout>
+
+        <ProgressBar
+            x:Name="barraPrograssoTMB"
+            Progress="0"
+            ProgressColor="Green"
+            WidthRequest="300"
+            Margin="0,10,0,0"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

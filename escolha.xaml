@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.escolha"
+             BackgroundColor="BurlyWood">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center" VerticalOptions="Center">
+            <Label 
+                Text="Verifique a sua saúde"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="30"/>
+
+            <Label Text="Índice de Massa Corporal"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+               />
+            
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+                
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="aerobica.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar IMC"
+                          HeightRequest="10" WidthRequest="150" 
+                          BackgroundColor="BurlyWood"
+                            x:Name="btnIMC"
+                            Clicked="btnIMC_Clicked"
+                            />
+                </HorizontalStackLayout>
+
+            </Border>
+
+            <Label Text="Taxa Metabólica Basal"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="prancha.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar TMB"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="btnTMB"
+                         Clicked="btnTMB_Clicked"
+                            
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text="Gasto Calórico Diário Total (TDEE)"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="correr.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar TDEE"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                            x:Name="btnTDEE"
+                            Clicked="btnTDEE_Clicked"
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text="Peso Ideal"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" StrokeShape="RoundRectangle 40"
+                    Stroke="Black" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="escala.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar IMC"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                            x:Name="btnPesoIdeal"
+                            Clicked="btnPesoIdeal_Clicked"
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text="Percentual de Gordura Corporal"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" Stroke="Black" StrokeShape ="RoundRectangle 40" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="mulher.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="% Gordura Corporal"
+                        HeightRequest="10" WidthRequest="180" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="PercentualDeGorduraCorporal"
+                        Clicked="PercentualDeGorduraCorporal_Clicked"
+                       />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text="Frequência Cardíaca Máximo (FCM)"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" Stroke="Black" StrokeShape="RoundRectangle 40" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="cardiaco.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar FCM"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="btnSCM"
+                        Clicked="btnSCM_Clicked"
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text="Relação Cintura-Altura"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" Stroke="Black" StrokeShape="RoundRectangle 40" StrokeThickness="2">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="flexibilidade.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                    />
+                    <Button Text="Iniciar RCA"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="btnRCA"
+                        Clicked="btnRCA_Clicked"
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Label Text=" Ingestão diária de água"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+            />
+            <Border HeightRequest="150" WidthRequest="360" BackgroundColor="DarkOrange" Stroke="Black" StrokeShape="RoundRectangle 40" StrokeThickness="2" >
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Image Source="alimentacao.png" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                       />
+                    <Button Text="Ingestão diária de água"
+                        HeightRequest="10" WidthRequest="150" 
+                        BackgroundColor="BurlyWood"
+                        x:Name="btnIngestaoDiariaDeAgua"
+                        Clicked="btnIngestaoDiariaDeAgua_Clicked"
+                    />
+                </HorizontalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

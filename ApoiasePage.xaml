@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.Informacoes.ApoiasePage"
+             Shell.NavBarIsVisible="false"
+            Title="">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center">
+            <Label 
+                Text="Apoie o Desenvolvimento do Aplicativo"
+                FontSize="25"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                 />
+            <Label
+                Text="Estamos desenvolvendo um aplicativo dedicado a fornecer ferramentas práticas para o acompanhamento da saúde e da rotina de treinos. Entre seus recursos, estão o cálculo do IMC, da Taxa Metabólica Basal, além de um sistema organizado para registrar séries, repetições e cargas utilizadas em diversos exercícios."
+                HorizontalTextAlignment="Center"
+                />
+            <Label
+                Text="Nosso objetivo é oferecer uma experiência confiável, intuitiva e contínua, com atualizações e melhorias constantes. Para que esse projeto possa evoluir, seu apoio é fundamental."
+                HorizontalTextAlignment="Center"
+                />
+            <Label
+                Text="Como você pode apoiar"
+                FontSize="18"
+                FontAttributes="Bold"
+                />
+
+            <Label
+                Text="•Testando o aplicativo e enviando feedbacks, contribuindo para aprimorar a experiência."
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="•Compartilhando o aplicativo com outras pessoas, ampliando seu alcance."
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="•Ajudando na divulgação nas redes sociais, fortalecendo o crescimento da comunidade."
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="•Contribuindo com doações, inclusive com um apoio simbólico de R$5, que já faz grande diferença no desenvolvimento e manutenção do projeto."
+                HorizontalTextAlignment="Center"
+                />
+
+            <Button
+                Text="Apoiar"
+                BackgroundColor="BurlyWood"
+                x:Name="btnApoiar"
+                Clicked="btnApoiar_Clicked" 
+                />
+
+            <Button
+                Text="Apoiar com pix"
+                BackgroundColor="BurlyWood"
+                x:Name="btnApoiarPix"
+                Clicked="btnApoiarPix_Clicked"
+                />
+
+            <Label
+                Text="Agradecemos por dedicar seu tempo e por apoiar a continuidade deste trabalho. Juntos, podemos construir uma ferramenta cada vez mais completa e acessível."
+                HorizontalTextAlignment="Center"
+                />
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>

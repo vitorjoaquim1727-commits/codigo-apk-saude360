@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.RCA"
+             Title="Relação Cintura - Altura">
+
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0"  HorizontalOptions="Center">
+           
+
+            <Image Source="flexibilidade.png"/>
+
+            <Label
+                Text="Cintura"
+            />
+
+            <Entry 
+                x:Name="txtCintura"
+                Placeholder="Medida (cm)"
+                Keyboard="Numeric"/>
+
+            
+            <Label 
+                Text="Altura"
+                FontAttributes="Bold"
+                />
+            <Entry
+                x:Name="txtAltura"
+                Placeholder="Medida (cm)"
+                Keyboard="Numeric"
+                />
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+
+                <Button
+                    x:Name="btnCalcular"
+                    Text="Enviar"
+                    Clicked="btnCalcular_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+
+                <Button
+                    x:Name="btnApagar"
+                    Text="Apagar"
+                    Clicked="btnApagar_Clicked"
+                    BackgroundColor="BurlyWood"
+                    />
+
+            </HorizontalStackLayout>
+
+            <Border HeightRequest="100" WidthRequest="360">
+                <ScrollView>
+                    <Label
+                        x:Name="Resposta"
+                        Text=""
+                        />
+                </ScrollView>
+            </Border>
+
+            <Button
+                x:Name="btnStatus"
+                Text="Status"
+                Clicked="btnStatus_Clicked"
+                BackgroundColor="BurlyWood"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

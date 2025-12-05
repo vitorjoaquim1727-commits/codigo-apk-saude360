@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.Informacoes.InformacaoIMCPage"
+             Title="InformacaoIMCPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="32, 0">
+            <Label 
+                Text="✅ O que é o IMC?"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="30"
+            />
+            <Label
+                Text="O IMC é um índice criado pela Organização Mundial da Saúde (OMS) para classificar o estado nutricional de adultos."
+                />
+
+            <Label
+                Text="Ele é usado para identificar situações como:"
+                />
+
+            <VerticalStackLayout Spacing="5">
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Baixo peso" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Peso adequado" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Sobrepeso" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Obesidade" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+            <Label
+                
+                Text="🧮 Como funciona o IMC?"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="O cálculo é simples:"
+                />
+
+            <Label
+                Text="👉 IMC = peso (kg) ÷ altura² (m)"
+                FontAttributes="Bold"
+                FontSize="20"
+                />
+            
+            <Label
+                Text="Exemplo:"
+                FontSize="18"
+                />
+
+            <Label
+                Text="Se você pesa 70 kg e tem 1,70 m de altura:"
+                />
+
+            <VerticalStackLayout Spacing="5">
+
+                <HorizontalStackLayout>
+                    <Label Text="IMC = 70 ÷ (1,70 × 1,70)"  /> 
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="IMC = 70 ÷ 2,89" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="IMC ≈ 24,2"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+            <Label
+                Text="📊 Classificação do IMC (Adultos)"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Grid ColumnDefinitions="*,Auto"
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                Padding="10"
+                RowSpacing="9"
+                ColumnSpacing="20">
+
+                <!-- Cabeçalhos -->
+                <Label Text="IMC" FontAttributes="Bold" />
+                <Label Text="Classificação" FontAttributes="Bold" Grid.Column="1" />
+
+                <!-- Linha 1 -->
+                <Label Text="Abaixo de 18,5" Grid.Row="1" />
+                <Label Text="Baixo peso" Grid.Row="1" Grid.Column="1" />
+
+                <!-- Linha 2 -->
+                <Label Text="18,5 a 24,9" Grid.Row="2" />
+                <Label Text="Peso normal" Grid.Row="2" Grid.Column="1" />
+
+                <!-- Linha 3 -->
+                <Label Text="25 a 29,9" Grid.Row="3" />
+                <Label Text="Sobrepeso" Grid.Row="3" Grid.Column="1" />
+
+                <!-- Linha 4 -->
+                <Label Text="30 a 34,9" Grid.Row="4" />
+                <Label Text="Obesidade grau 1" Grid.Row="4" Grid.Column="1" />
+
+                <!-- Linha 5 -->
+                <Label Text="35 a 39,9" Grid.Row="5" />
+                <Label Text="Obesidade grau 2" Grid.Row="5" Grid.Column="1" />
+
+                <!-- Linha 6 -->
+                <Label Text="Acima de 40" Grid.Row="6" />
+                <Label Text="Obesidade grau 3 (grave)" Grid.Row="6" Grid.Column="1" />
+
+            </Grid>
+
+            <Label
+                Text="⚠️ Limitações do IMC"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label 
+                Text="O IMC não distingue massa muscular de gordura, por isso pode ser impreciso para:"
+                />
+
+            <VerticalStackLayout Spacing="5">
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Atletas ou pessoas muito musculosas" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Peso adequado" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Idosos com menos massa muscular" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Pessoas com retenção de líquido" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="• " FontSize="20" />
+                    <Label Text="Crianças (usam outra tabela)" />
+                </HorizontalStackLayout>
+                
+            </VerticalStackLayout>
+
+            <Label
+                Text="Ou seja: é um indicador geral, não um diagnóstico."/>
+
+            <Label
+                Text="🎯 Para que serve o IMC?"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"/>
+
+            <Label 
+                Text="Ele ajuda a:"
+                />
+
+            <VerticalStackLayout Spacing="5">
+
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout>
+                        <Label Text="• " FontSize="20" />
+                        <Label Text="Avaliar risco para doenças (diabetes, hipertensão, problemas cardíacos)" />
+                    </HorizontalStackLayout>
+                </ScrollView>
+
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout>
+                        <Label Text="• " FontSize="20" />
+                        <Label Text="Acompanhar mudanças no peso ao longo do tempo" />
+                    </HorizontalStackLayout>
+                </ScrollView>
+
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout>
+                        <Label Text="• " FontSize="20" />
+                        <Label Text="Guiar planos de treino e alimentação" />
+                    </HorizontalStackLayout>
+                </ScrollView>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

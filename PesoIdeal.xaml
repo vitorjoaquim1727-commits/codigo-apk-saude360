@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Saude360.NovaPasta.PesoIdeal"
+             Title="Peso Ideal">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+  
+
+            <Image Source="escala.png"/>
+
+            <Label Text="Altura"/>
+
+            <Entry x:Name="txtAltura"
+                   Keyboard="Numeric"
+                   Placeholder="(cm)"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                
+                <Button
+                    Text="Verificar"
+                    x:Name="txtCalcular"
+                    Clicked="txtCalcular_Clicked"
+                    BackgroundColor="BurlyWood"/>
+
+                <Button
+                    Text="Apagar"
+                    x:Name="txtApagar"
+                    Clicked="txtApagar_Clicked"
+                    BackgroundColor="BurlyWood"/>
+                
+            </HorizontalStackLayout>
+
+            <Border WidthRequest="360" HeightRequest="150">
+                <ScrollView>
+                <Label Text=""
+                       x:Name="Resultado"
+                       FontSize="20"/>
+                </ScrollView>
+
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
